@@ -1,3 +1,253 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: "Edu SA Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D1D1D1;
+    z-index: 1000;
+    height: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.logo a{
+    color: rgb(69, 69, 69);
+    transition: 0.5s ease;
+    display: inline-block
+}
+
+.logo a:hover {
+    color: rgb(227, 46, 46);
+    transform: translateY(-0.1rem);
+}
+
+.nav-links a {
+    padding-right: 25px;
+    color: black;
+    transition: 0.3s ease;
+    display: inline-block
+}
+
+.nav-links a:hover{
+    color: rgb(227, 46, 46);
+    transform: translateY(-0.1rem);
+}
+
+main {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #D1D1D1;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #85C7F2;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #5ca7da;
+}
+
+.hero-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.about-skills {
+    display: flex;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about, .skills{
+    flex: 1 1 300px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(120px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skill {
+    background-color: #919191;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #85C7F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #5ca7da;
+}
+
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: #8e8e8e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+
+#Contact {
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-form input,.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background-color: #85C7F2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: #094f7a;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #D1D1D1;
+    z-index: 1000;
+    height: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+    color: black;
+}
+
+footer a:hover{
+    color: red;
+    transform: translateY(-0.1rem);
+}
+
+@media (max-width:768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    margin: 20px auto 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
